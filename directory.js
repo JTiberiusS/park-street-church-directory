@@ -65,7 +65,7 @@ async function fetchDirectory() {
   } catch (error) {
     console.error(error);
     status.classList.add('is-error');
-    status.replaceChildren(document.createTextNode('We couldn’t update the directory. Please refresh the page and try again.'));
+    status.replaceChildren(document.createTextNode("We couldn't update the directory. Please refresh the page and try again."));
   }
 }
 
@@ -163,7 +163,7 @@ function renderMembers(data) {
     const card = document.createElement('button');
     card.type = 'button';
     card.className = 'member-card';
-    card.setAttribute('aria-label', `View ${member.fullName}’s profile`);
+    card.setAttribute('aria-label', `View ${member.fullName}'s profile`);
     card.addEventListener('click', () => openModal(member.id));
 
     const photo = makePhoto(member.photo, member.fullName, 'card-photo');
@@ -288,3 +288,4 @@ document.addEventListener('keydown', event => {
 });
 
 fetchDirectory();
+
