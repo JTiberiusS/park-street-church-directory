@@ -4,10 +4,9 @@ A standalone, responsive member directory that reads live data from the church's
 
 ## Project structure
 
-- `index.html` — page structure and accessible dialog markup
-- `styles.css` — layout, colors, responsive styles, and animations
-- `directory.js` — CSV loading, Breeze column mapping, privacy rules, search, household relationships, and profiles
-- `00 Inbox/Directory0426.html` — the original single-file directory, retained as a reference
+- `index.html` â€” page structure and accessible dialog markup
+- `styles.css` â€” layout, colors, responsive styles, and animations
+- `directory.js` â€” CSV loading, Breeze column mapping, privacy rules, search, household relationships, and profiles
 
 No build process or package installation is required.
 
@@ -36,7 +35,7 @@ If the Apps Script deployment URL changes, replace only the `csvUrl` value. Do n
 
 1. Create a GitHub repository for the directory.
 2. Add `index.html`, `styles.css`, `directory.js`, and `README.md` to the repository root.
-3. In the repository, open **Settings → Pages**.
+3. In the repository, open **Settings â†’ Pages**.
 4. Under **Build and deployment**, choose **Deploy from a branch**.
 5. Select the main branch and the root folder, then save.
 6. GitHub will provide a Pages address after the first deployment finishes.
@@ -45,7 +44,7 @@ Because this is a member directory, decide whether a publicly accessible GitHub 
 
 ## Connect a custom domain
 
-In **Settings → Pages**, enter a domain such as `directory.parkstreetbc.org`. At the DNS provider, add the DNS record GitHub requests—normally a `CNAME` from `directory` to the repository's `github.io` hostname. Wait for DNS verification, then enable **Enforce HTTPS**.
+In **Settings â†’ Pages**, enter a domain such as `directory.parkstreetbc.org`. At the DNS provider, add the DNS record GitHub requestsâ€”normally a `CNAME` from `directory` to the repository's `github.io` hostname. Wait for DNS verification, then enable **Enforce HTTPS**.
 
 A subdomain is the simplest option. Serving at `parkstreetbc.org/directory` generally requires the main church website or a reverse proxy to own that path.
 
@@ -62,7 +61,7 @@ Opening `index.html` directly may work, but some browsers restrict network reque
 These are intentionally not included in the initial refactor:
 
 1. A household view that shows one family card before individual profiles.
-2. “New Member” badges calculated from the existing Member Since field.
+2. â€œNew Memberâ€ badges calculated from the existing Member Since field.
 3. Ministry, class, staff, pastor, or deacon badges when those fields are available and approved for display.
 4. A print-friendly household directory with privacy-aware contact details.
 5. Passwordless sign-in or a private member portal before exposing sensitive information publicly.
@@ -71,3 +70,4 @@ These are intentionally not included in the initial refactor:
 8. Optimized photo thumbnails or an image proxy for faster loading on mobile connections.
 9. Installable Progressive Web App support for quick access from a phone home screen.
 10. An optional short bio or favorite Scripture field managed in the spreadsheet.
+
