@@ -64,6 +64,7 @@ h1 { margin: 0; font: 600 clamp(2.5rem, 7vw, 4.7rem)/1.08 Lora, Georgia, serif; 
 .letter-button:disabled { opacity: .3; cursor: default; }
 
 .status { display: flex; align-items: center; justify-content: center; gap: .7rem; min-height: 9rem; color: var(--muted); }
+.status[hidden] { display: none; }
 .status.is-error { color: #8b3f37; }
 .spinner { width: 1.1rem; height: 1.1rem; border: 2px solid var(--line); border-top-color: var(--brand); border-radius: 50%; animation: spin .8s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -121,3 +122,4 @@ body.modal-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
