@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The member directory for Park Street Baptist Church.">
+  <meta name="theme-color" content="#315f5b">
+  <title>Church Directory | Park Street Baptist Church</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="directory.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#directory">Skip to directory</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">Park Street Baptist Church</p>
+      <h1>Church Directory</h1>
+      <p class="welcome">A place to put names to faces and stay connected with our church family.</p>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="directory-tools" aria-label="Directory controls">
+      <div class="search-wrap">
+        <span class="search-icon" aria-hidden="true"></span>
+        <label class="sr-only" for="searchInput">Search members by name</label>
+        <input id="searchInput" type="search" placeholder="Search by name…" autocomplete="off">
+      </div>
+      <nav id="alphabetNav" class="alphabet-nav" aria-label="Filter by last-name initial"></nav>
+    </section>
+
+    <div id="status" class="status" role="status" aria-live="polite">
+      <span class="spinner" aria-hidden="true"></span>
+      <span>Updating the directory…</span>
+    </div>
+    <section id="directory" class="directory-grid" aria-label="Church members"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Park Street Baptist Church</p>
+  </footer>
+
+  <div id="modalOverlay" class="modal-overlay" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="profileName" tabindex="-1">
+      <button id="closeModal" class="close-button" type="button" aria-label="Close profile">×</button>
+      <div id="modalBody"></div>
+    </section>
+  </div>
+</body>
+</html>
